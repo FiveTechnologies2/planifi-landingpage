@@ -224,6 +224,12 @@ header .navbar li a:hover {
     padding: 40px;
 }
 
+/* About the product Video section */
+.section-about-the-product {
+    background-color: #F7CAC9; /* Soft pink */
+    padding: 40px;
+}
+
 .testimonials {
     display: flex;
     justify-content: space-between;
@@ -292,22 +298,28 @@ header .navbar li a:hover {
 
   .heading-container,
 .video-container {
-    flex: 1;
-}
-
-.contenedor-video {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
     position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 */
+    padding-bottom: 56.25%; /* Proporción 16:9 para el video */
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: #000;
+    margin-top: 20px;
 }
 
-.contenedor-video video {
+.contenedor-video  {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Quitar borde al iframe */
 }
